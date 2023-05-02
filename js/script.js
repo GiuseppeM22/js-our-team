@@ -6,12 +6,14 @@ let membriTeam = [
     {nome: "carlo" , ruolo: "cuoco" , foto: "./foto1" }
 ]
 
-for (const key in membriTeam) {
-        const element = membriTeam[key];
-        console.log(element)
-     
-        document.getElementById("team").innerText = membriTeam[key]
+
+for (let i = 0; i < membriTeam.length; i++) {
+    const membriEle = membriTeam[i];
+    console.log( membriEle.nome)
+    
+    document.getElementById("name").innerText = membriEle.nome
 }
-//document.getElementById("team").innerText = membriTeam
-//console.log(membriTeam)
+
+
+
 
